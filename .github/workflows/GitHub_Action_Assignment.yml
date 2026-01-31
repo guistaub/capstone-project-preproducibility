@@ -1,0 +1,17 @@
+# PUT YOUR GITHUB ACTION WORKFLOW HERE
+
+name: GitHub Action
+
+on: 
+  pull_request:
+
+jobs:
+  job-name: # CALL THE JOB SOMETHING
+    runs-on: ubuntu-latest  
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm Checkout
+        run: echo "checkout success"
